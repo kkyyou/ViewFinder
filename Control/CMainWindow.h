@@ -59,7 +59,8 @@ public:
 public:
     void                                        SetSplitterPosX(int posX);
     void                                        EraseAfterImage();
-                                                
+    void                                        ShowSplitter(bool show);
+
 private:                                        
     bool                                        CreateChildWindows();
     void                                        DeleteChildWindows();

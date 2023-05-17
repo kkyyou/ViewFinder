@@ -187,6 +187,8 @@ void CTopMenuBar::OnViewLargerBtnClicked()
 
 	m_centerFileBrowserList->ShowViewLargeImageViewer();
 
+	m_mainWindow->ShowSplitter(false);
+
 	// 크게보기 숨기기, 목록보기 보이기
 	HideViewLargerBtn();
 }
@@ -225,6 +227,7 @@ void CTopMenuBar::OnViewListBtnClicked()
 	m_centerFileBrowserList->ShowWindow(SW_SHOWNORMAL);
 	m_leftFileBrowserTree->ShowWindow(SW_SHOWNORMAL);
 	m_leftBottomPreview->ShowWindow(SW_SHOWNORMAL);
+	m_mainWindow->ShowSplitter(true);
 
 	// 이미지 보기가 끝났으니 경로는 상위 경로
 	m_filePathBar->SetCurPathToEdit(m_filePathBar->GetPrevPath());

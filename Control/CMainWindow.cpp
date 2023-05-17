@@ -143,10 +143,6 @@ LRESULT CMainWindow::OnMouseMove(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& 
 		if (m_mousePosX < minPosX)
 			m_mousePosX = minPosX;
 		
-		RECT rc;
-		GetClientRect(&rc);
-		InvalidateRect(&rc);
-
 		// 영역 계산
 		RECT rcMainWindow;
 		GetClientRect(&rcMainWindow);
@@ -373,6 +369,11 @@ void CMainWindow::EraseAfterImage()
 	FillRect(hdc, &rcSplitterMargin, brush);
 
 	DeleteObject(brush);
+}
+
+void CMainWindow::ShowSplitter(bool show)
+{
+	show == true ? m_splitter->ShowWindow(SW_SHOWNORMAL) : m_splitter->ShowWindow(SW_HIDE);
 }
 
 bool CMainWindow::CreateChildWindows()

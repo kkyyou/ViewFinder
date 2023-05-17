@@ -137,7 +137,6 @@ LRESULT CCenterFileBrowserList::OnPaint(UINT uMsg, WPARAM wParam, LPARAM lParam,
 {
 	PAINTSTRUCT ps;
 	HDC hdc = BeginPaint(&ps);
-
 	EndPaint(&ps);
 	return 0;
 }
@@ -514,6 +513,7 @@ void CCenterFileBrowserList::OnListItemDBClick()
 
 				// 크게보기 버튼 숨기기, 목록보기 보이기
 				m_topMenuBar->HideViewLargerBtn();
+				m_mainWindow->ShowSplitter(false);
 			}
 		}
 		else
