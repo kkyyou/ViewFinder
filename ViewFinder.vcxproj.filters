@@ -1,0 +1,211 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Control">
+      <UniqueIdentifier>{f8a96ff7-2b54-4e03-9fd9-ece35f341a9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Define">
+      <UniqueIdentifier>{dce2680f-534e-46ef-8671-a6cbaffad0ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Image">
+      <UniqueIdentifier>{bfe60d2c-4027-47d9-8f18-150838f5584e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{3fc0306c-9628-4f45-83b4-050e28ce1be1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Thread">
+      <UniqueIdentifier>{eb81448a-8c2a-40fa-b9cf-b7bfd60ca22e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ViewFinder.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="small.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\treeImageList.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\folder.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\imageList.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="ViewFinder.ico">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="images\bitmap4.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\ViewLarger.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\exit.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\Edit.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\Edit.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\Save.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\ViewList.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\iconView.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Images\preview.bmp">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Control\CCenterFileBrowserList.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\CFilePathBar.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\CImageViewer.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\CLeftBottomPreview.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\CLeftFileBrowserTree.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\CMainWindow.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\CPalette.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\CSplitter.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Control\CTopMenuBar.cpp">
+      <Filter>Control</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\CBmpImage.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\CImage.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\CImageFactory.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\CJpegImage.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CFileDialog.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CFontInfo.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CUtils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\CRegistry.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread\CThreadPool.cpp">
+      <Filter>Thread</Filter>
+    </ClCompile>
+    <ClCompile Include="Image\MyImageApi.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Image\MyOpencvApi.cpp">
+      <Filter>Image</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Control\CCenterFileBrowserList.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\CFilePathBar.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\CImageViewer.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\CLeftBottomPreview.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\CLeftFileBrowserTree.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\CMainWindow.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\CPalette.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\CSplitter.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Control\CTopMenuBar.h">
+      <Filter>Control</Filter>
+    </ClInclude>
+    <ClInclude Include="Define\StringDefine.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Define\UiDefine.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Define\UserMsgDefine.h">
+      <Filter>Define</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\CBmpImage.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\CImage.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\CImageFactory.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\CJpegImage.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CFileDialog.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CFontInfo.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\CUtils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Utils\CRegistry.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\EzDllLoader.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread\CThreadPool.h">
+      <Filter>Thread</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\MyImageApi.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+    <ClInclude Include="Image\MyOpencvApi.h">
+      <Filter>Image</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
