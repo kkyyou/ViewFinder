@@ -352,23 +352,27 @@ void CMainWindow::SetSplitterPosX(int posX)
 
 void CMainWindow::EraseAfterImage()
 {
-	RECT rcMainWindow;
-	GetClientRect(&rcMainWindow);
+	if (!m_imageViewer->IsWindowVisible())
+	{
+		RECT rcMainWindow;
+		GetClientRect(&rcMainWindow);
 
-	RECT rcRightMargin = rcMainWindow;
-	RECT rcSplitterMargin = rcMainWindow;
+		RECT rcRightMargin = rcMainWindow;
+		RECT rcSplitterMargin = rcMainWindow;
 
-	rcRightMargin.left = rcRightMargin.right - 10;
-	HBRUSH brush = CreateSolidBrush(RGB(255, 255, 255));
-	HDC hdc = GetDC();
-	FillRect(hdc, &rcRightMargin, brush);
+		rcRightMargin.left = rcRightMargin.right - 10;
+		HBRUSH brush = CreateSolidBrush(RGB(255, 255, 255));
+		HDC hdc = GetDC();
+		FillRect(hdc, &rcRightMargin, brush);
 
-	rcSplitterMargin.top = UI_TOP_MENU_BAR_HEIGHT + UI_FILE_PATH_BAR_HEIGHT;
-	rcSplitterMargin.left = m_leftFileBrowserTree->GetWidth();
-	rcSplitterMargin.right = m_leftFileBrowserTree->GetWidth() + 10;
-	FillRect(hdc, &rcSplitterMargin, brush);
+		//rcSplitterMargin.top = UI_TOP_MENU_BAR_HEIGHT + UI_FILE_PATH_BAR_HEIGHT;
+		//rcSplitterMargin.left = m_leftFileBrowserTree->GetWidth();
+		//rcSplitterMargin.right = m_leftFileBrowserTree->GetWidth() + 10;
+		//FillRect(hdc, &rcSplitterMargin, brush);
 
-	DeleteObject(brush);
+		DeleteObject(brush);
+	}
+
 }
 
 void CMainWindow::ShowSplitter(bool show)
